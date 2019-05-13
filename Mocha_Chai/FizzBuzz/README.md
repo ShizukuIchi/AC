@@ -15,7 +15,7 @@
 
 ## 輸出測試報告
 
-![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_13___3_24_38-1557732323287.png)
+![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_13___3_37_42-1557733079490.png)
 
 ## 檔案說明
 
