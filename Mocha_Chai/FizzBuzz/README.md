@@ -2,6 +2,13 @@
 
 ## 套件與軟體
 * Node.js 和 npm
+  * macOS
+    * 更新與安裝
+      * brew update
+      * brew install node
+    * 查看版本
+      * node -v
+      * npm -v
 * Mocha 和 Chai
 * 瀏覽器
 
