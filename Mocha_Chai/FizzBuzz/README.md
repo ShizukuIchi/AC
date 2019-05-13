@@ -20,6 +20,12 @@
 * 執行
   * ../test/index.html
 
+## 測試案例
+* [case 1]  input: 4 , expect output : 4
+* [case 2]  input: 6 , expect output : Fizz
+* [case 3]  input: 10, expect output : Buzz
+* [case 4]  input: 30, expect output : FizzBuzz
+
 ## 輸出測試報告
 
 ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_13___3_37_42-1557733079490.png)
