@@ -2,14 +2,14 @@ function toRoman(value) {
   let number = Math.ceil(parseInt(value));
   if (isNaN(number)) {
     console.log("輸入格式錯誤!  請你輸入數字")
-    return value;
+    return value
   } else {
     if (0 >= number) {
       console.log("請輸入大於 0 數字!")
-      return value;
+      return value
     } else if (number >= 4000) {
       console.log("請輸入小於3999數字!")
-      return value;
+      return value
     } else {
       const romanNumber = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
       const decimalNumber = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
