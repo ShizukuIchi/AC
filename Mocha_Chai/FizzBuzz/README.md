@@ -40,7 +40,7 @@
 ## 檔案說明
 
 | 編號 | 資料夾 |  檔案名稱 | 說明  |
-|---|---|---|---|
+|:---:|---|---|---|
 |1| node_modules |   | 存放 Mocha 和 Chai 的函式庫  |
 |2| js |  fizzbuzz.js | FizzBuzz 功能程式碼  |
 |3| test | fizzbuzz_spec.js  | 測試程式碼 |
