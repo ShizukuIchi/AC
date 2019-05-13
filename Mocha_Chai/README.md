@@ -1,4 +1,9 @@
-# Mocha 和 Chai
+# 透過程式測試程式
+
+## 套件與軟體
+* Node.js 和 npm
+* Mocha 和 Chai
+* 瀏覽器
 
 ## 用 Mocha 寫測試 
 * 初始化專案
