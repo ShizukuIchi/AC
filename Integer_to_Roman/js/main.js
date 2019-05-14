@@ -1,5 +1,5 @@
 function toRoman(value) {
-  let number = Math.ceil(parseInt(value));
+  const number = Math.ceil(parseInt(value));
   if (isNaN(number)) {
     console.log("輸入格式錯誤!  請你輸入數字")
     return value
@@ -14,7 +14,7 @@ function toRoman(value) {
       const romanNumber = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
       const decimalNumber = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
       let romanNumeral = ""
-      for (var i = 0; i < romanNumber.length; i++) {
+      for (let i = 0; i < romanNumber.length; i++) {
         while (number >= decimalNumber[i]) {
           number -= decimalNumber[i]
           romanNumeral += romanNumber[i]
