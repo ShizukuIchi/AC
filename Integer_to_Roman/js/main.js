@@ -1,5 +1,5 @@
 function toRoman(value) {
-  const number = Math.ceil(parseInt(value));
+  let number = Math.ceil(parseInt(value));
   if (isNaN(number)) {
     console.log("輸入格式錯誤!  請你輸入數字")
     return value
