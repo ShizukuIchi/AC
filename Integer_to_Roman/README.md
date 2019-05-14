@@ -10,3 +10,10 @@
 
 ## GitHub Page
 * https://archerhuang.github.io/AC/Integer_to_Roman/
+
+## 檔案說明
+
+| 編號 | 資料夾 |  檔案名稱 | 說明  |
+|:---:|---|---|---|
+|1| js | main.js | 存放轉換邏輯 JavaScript 程式 |
+|2|  |  index.html | 顯示結果網頁 |
