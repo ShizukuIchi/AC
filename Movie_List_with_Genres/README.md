@@ -6,3 +6,10 @@
 
 ## GitHub Page
 * https://archerhuang.github.io/AC/Movie_List_with_Genres
+
+## 檔案說明
+
+| 編號 | 資料夾 |  檔案名稱 | 說明  |
+|:---:|---|---|---|
+|1| js | main.js | 存放電影分類清單與清單 JavaScript 邏輯程式 |
+|2|  |  index.html | 顯示結果網頁 |
