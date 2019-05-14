@@ -6,7 +6,7 @@ const inputGreen = document.getElementById("input_green");
 const displayGreen = document.getElementById("item_number_green");
 const inputBlue = document.getElementById("input_blue");
 const displayBlue = document.getElementById("item_number_blue");
-const result_hex = document.getElementById("result_hex");
+const resultHex = document.getElementById("result_hex");
 
 rgbPannel.addEventListener("mousemove", event => {
   if (event.target.id === "input_red") {
@@ -17,7 +17,7 @@ rgbPannel.addEventListener("mousemove", event => {
     displayBlue.innerText = inputBlue.value;
   }
 
-  result_hex.innerText = rgbToHex(displayRed.innerText, displayGreen.innerText, displayBlue.innerText)
+  resultHex.innerText = rgbToHex(displayRed.innerText, displayGreen.innerText, displayBlue.innerText)
   pannel.backgroundColor = rgbToHex(displayRed.innerText, displayGreen.innerText, displayBlue.innerText)
 })
 
