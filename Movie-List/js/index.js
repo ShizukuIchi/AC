@@ -78,7 +78,7 @@
     let htmlContent = ''
     if (!isListModel) {
 
-      data.forEach(function (item, index) {
+      data.forEach(item => {
         htmlContent += `
         <div class="col-sm-3">
           <div class="card mb-2">
@@ -100,7 +100,7 @@
 
     } else {
 
-      data.forEach(function (item, index) {
+      data.forEach(item => {
         htmlContent += `
           <div class="container">
             <div class="row size">
