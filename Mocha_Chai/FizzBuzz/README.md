@@ -25,8 +25,7 @@
 * npm 安裝 Mocha 和 Chai
   * npm install mocha chai --save-dev
 * 執行
-  * [使用 Live Server] 開啟 /test/index.html 程式
-    (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  * [使用 Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 開啟 /test/index.html 程式
     ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_15___5_32_02-1557912749253.png)
 
 ## 測試案例
