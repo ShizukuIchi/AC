@@ -26,7 +26,7 @@
   * npm install mocha chai --save-dev
 * 執行
   * [使用 Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 開啟 /Mocha_Chai/FizzBuzz/test/index.html 程式
-    ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_15___5_32_02-1557912749253.png)
+    ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_15___5_38_05-1557913111977.png)
 
 ## 測試案例
 * 【 Case 1 】input: 4 , expect output : 4
