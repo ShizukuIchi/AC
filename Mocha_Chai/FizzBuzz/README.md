@@ -27,7 +27,7 @@
 * 執行
   * ../test/index.html
     * [使用 Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-    ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_15___5_26_46-1557912435566.png)
+    ![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_15___5_32_02-1557912749253.png)
 
 ## 測試案例
 * 【 Case 1 】input: 4 , expect output : 4
