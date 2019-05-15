@@ -26,6 +26,7 @@
   * npm install mocha chai --save-dev
 * 執行
   * ../test/index.html
+    * 使用 Live Server
 
 ## 測試案例
 * 【 Case 1 】input: 4 , expect output : 4
