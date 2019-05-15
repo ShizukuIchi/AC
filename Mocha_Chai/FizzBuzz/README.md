@@ -9,7 +9,7 @@
     * 查看版本
       * node -v
       * npm -v
-* Mocha 和 Chai
+* [Mocha 和 Chai](#用-mocha-寫測試)
 * 瀏覽器
 
 ## FizzBuzz 功能
@@ -19,7 +19,7 @@
   * 若該整數能被 3 和 5 同時整除，回傳 FizzBuzz；
   * 若都不能整除，回傳該整數。
 
-## 用 Mocha 寫測試 
+## 用 Mocha 寫測試
 * 初始化專案
   * npm init
 * npm 安裝 Mocha 和 Chai
