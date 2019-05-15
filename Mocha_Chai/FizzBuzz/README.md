@@ -26,7 +26,7 @@
   * npm install mocha chai --save-dev
 * 執行
   * ../test/index.html
-    * 使用 Live Server
+    * [使用 Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## 測試案例
 * 【 Case 1 】input: 4 , expect output : 4
