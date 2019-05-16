@@ -49,4 +49,4 @@
 |1| node_modules |   | 存放 Mocha 和 Chai 的函式庫  |
 |2| js |  fizzbuzz.js | FizzBuzz 功能程式碼  |
 |3| test | fizzbuzz_spec.js  | 測試程式碼 |
-|3| test | index.html  |  輸出測試報告的 HTML 頁面 |
+|4| test | index.html  |  輸出測試報告的 HTML 頁面 |
