@@ -18,9 +18,6 @@
 | 9 | IX | 19 | XIX | 90 | XC |   |   |
 | 10 | X | 20 | XX | 98 | XCVIII |   |   |
 
-![](https://oranwind.s3.amazonaws.com/2019/May/_____2019_05_14___3_29_33-1557818994112.png)
-
-
 ## GitHub Page
 * https://archerhuang.github.io/AC/Integer_to_Roman/
 
