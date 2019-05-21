@@ -1,8 +1,6 @@
 # JavaScript
 
-## 資料夾說明
-
-
+## 程式說明與 GitHub Pages
 
 | 編號 | GitHub Pages | 說明  |
 |:---:|---|---|
