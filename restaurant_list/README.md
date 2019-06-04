@@ -49,10 +49,10 @@ npm run dev
 
 | 編號 | 資料夾 |  檔案名稱 | 說明  |
 |:---:|:---:|---|---|
-|1| public | /javascripts/bootstrap.js | bootstrap 的　js　檔案 |
-|2| public | /javascripts/jquery-3.4.1.js | jquery　的　js　檔案 |
-|3| public | /javascripts/popper.min.js | popper　的　js　壓縮檔案 |
-|4| public | /stylesheets/bootstrap.css | bootstrap 的　css　檔案 |
+|1| public | /javascripts/bootstrap.js | bootstrap 的 js 檔案 |
+|2| public | /javascripts/jquery-3.4.1.js | jquery 的 js 檔案 |
+|3| public | /javascripts/popper.min.js | popper 的 js 壓縮檔案 |
+|4| public | /stylesheets/bootstrap.css | bootstrap 的 css 檔案 |
 |5| public | /stylesheets/bootstrap.css.map | debug 用 |
 |6| public | /stylesheets/index.css | 存放首頁的 css |
 |7| views | /layouts/main.handlebars | 存放 Layout |
