@@ -10,4 +10,4 @@
 |4| [POS](https://archerhuang.github.io/AC/POS/) | Web 版 POS |
 |5| [RGB_to_Hex_Converter](https://archerhuang.github.io/AC/RGB_to_Hex_Converter/) | 將 RGB 的數字轉換成 16 進制並更改網頁背景顏色 |
 |6| [Movie-List](https://archerhuang.github.io/AC/Movie-List) | 顯示電影資訊 |
-|7| restaurant_list | 顯示餐廳資訊 |
+|7| [restaurant_list](https://github.com/ArcherHuang/AC/tree/master/restaurant_list) | 顯示餐廳資訊 |
