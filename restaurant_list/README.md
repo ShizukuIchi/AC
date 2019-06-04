@@ -7,7 +7,7 @@
 * express-handlebars : 3.1.0
 
 ## clone 與安裝相依套件
-* 請在 `console` 輸入下方指令
+* 請在 `Console` 輸入下方指令
 ```
 git clone https://github.com/ArcherHuang/AC.git
 cd ./restaurant_list
