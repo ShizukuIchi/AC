@@ -5,9 +5,11 @@
 * express : 4.17.1
 * express-handlebars : 3.1.0
 
-## 安裝相依套件
-* 請輸入下方指令
+## clone 與安裝相依套件
+* 請在 `console` 輸入下方指令
 ```
+git clone https://github.com/ArcherHuang/AC.git
+cd ./restaurant_list
 npm install
 ```
 
@@ -15,9 +17,9 @@ npm install
 
 | 編號 | 功能 | URL | 說明  |
 |:---:|:---:|:---:|---|
-| 1 | 首頁 | http://localhost:3000/ | 看到所有餐廳與它們的簡單資料，簡單資料如餐廳照片、餐廳名稱、餐廳分類、餐廳評分  |
+| 1 | 首頁 | http://localhost:3000/ | 看到所有餐廳與它們的簡單資料，簡單資料如餐廳照片、餐廳名稱、餐廳分類、餐廳評分 |
 | 2 | 查看餐廳的詳細資訊 | http://localhost:3000/restaurants/1 | 詳細資訊如類別、地址、電話、描述、圖片 |
-| 3 | 搜尋餐廳　| http://localhost:3000/search?keyword=cafe | 依使用者輸入項目搜尋相關餐廳 |
+| 3 | 搜尋餐廳 | http://localhost:3000/search?keyword=cafe | 依使用者輸入項目搜尋相關餐廳 |
 
 ## 畫面
 * 首頁
