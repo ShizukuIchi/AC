@@ -3,8 +3,8 @@
 
 ## 環境建置與需求
 * Node.js : v10.16.0
-* express : 4.17.1
-* express-handlebars : 3.1.0
+* express : ^4.17.1
+* express-handlebars : ^3.1.0
 
 ## clone 與安裝相依套件
 * 請在 `Console` 輸入下方指令
