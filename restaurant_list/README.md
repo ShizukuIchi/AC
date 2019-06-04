@@ -62,3 +62,6 @@ npm run dev
 |11| --- | package-lock.json | 用以記錄當前狀態下實際安裝的各個　npm package　的具體來源和版本號 |
 |12| --- | package.json | 套件資訊 |
 |13| --- | restaurant.json | 餐廳資料 |
+
+## Contributor
+* [Archer Huang](https://github.com/archerhuang)
