@@ -12,7 +12,7 @@
 ```
 git clone https://github.com/ArcherHuang/AC.git
 cd ./AC/generateTalkTrash
-npm install
+npm i
 ```
 
 ## 功能
