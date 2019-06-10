@@ -11,7 +11,7 @@
 * 請在 `Console` 輸入下方指令
 ```
 git clone https://github.com/ArcherHuang/AC.git
-cd ./generateTalkTrash
+cd ./AC/generateTalkTrash
 npm install
 ```
 
