@@ -11,6 +11,8 @@
 - [Contributor](#contributor)
 
 ## 簡介
+[Top](#contents)
+
 * 依不同的職業產生不同的幹話 ......
 
 ## 環境建置與需求
