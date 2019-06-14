@@ -11,12 +11,10 @@
 - [Contributor](#contributor)
 
 ## 簡介
-[Top](#contents)
 
 * 依不同的職業產生不同的幹話 ......
 
 ## 環境建置與需求
-[Top](#contents)
 
 * Node.js : v10.16.0
 * express : ^4.17.1
@@ -24,7 +22,6 @@
 * handlebars: ^4.1.2"
 
 ## clone 與安裝相依套件
-[Top](#contents)
 
 * 請在 `Console` 輸入下方指令
 ```
@@ -34,7 +31,6 @@ npm i
 ```
 
 ## 功能
-[Top](#contents)
 
 | 編號 | 功能 | URL | 說明  |
 |:---:|:---:|:---:|---|
@@ -42,14 +38,12 @@ npm i
 
 
 ## 畫面
-[Top](#contents)
 
 * 首頁
 ![](https://oranwind.s3.amazonaws.com/2019/Jun/_____2019_06_10___8_08_06-1560169052549.png)
 
 
 ## 執行方式
-[Top](#contents)
 
 * 請在 `Console` 輸入下方指令
 ```
@@ -57,7 +51,6 @@ npm run dev
 ```
 
 ## 檔案說明
-[Top](#contents)
 
 | 編號 | 資料夾 |  檔案名稱 | 說明  |
 |:---:|:---:|---|---|
@@ -77,6 +70,5 @@ npm run dev
 
 
 ## Contributor
-[Top](#contents)
 
 * [Archer Huang](https://github.com/archerhuang)
