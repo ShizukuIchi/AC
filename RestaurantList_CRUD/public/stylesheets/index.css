@@ -73,3 +73,7 @@ header {
     font-size: 2rem;
   }
 }
+
+.card img {
+  height: 250px;
+}
