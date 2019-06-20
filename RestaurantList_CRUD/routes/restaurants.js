@@ -70,6 +70,29 @@ router.get('/:id/edit', (req, res) => {
   })
 })
 
+// 修改餐廳動作
+router.put('/:id', (req, res) => {
+
+  // 從 db 取資料
+  Restaurant.findOne({
+    _id: req.params.id,
+  }, (err, restaurant) => {
+
+    if (err) return console.error(err)
+
+    // 更新表單資料
+    Object.assign(restaurant, req.body)
+
+    // 將更新後的資料存入 db
+    // 再導頁到餐廳詳細頁面
+    restaurant.save(err => {
+      if (err) return console.error(err)
+      return res.redirect(`/restaurants/${req.params.id}`)
+    })
+
+  })
+})
+
 // 刪除餐廳動作
 router.delete('/:id/delete', (req, res) => {
   // 從 db 取資料
