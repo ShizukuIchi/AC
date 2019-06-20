@@ -8,6 +8,7 @@ const Restaurant = require('./models/restaurant')
 
 // 引入 Router
 const HomeRouter = require('./routes/home')
+const RestaurantsRouter = require('./routes/restaurants')
 
 // 使用 express 與設定 port 為 3000
 const app = express()
@@ -39,6 +40,9 @@ app.use(methodOverride('_method'))
 // 設定路由
 // home 路由
 app.use('/', HomeRouter)
+
+// restaurants 路由
+app.use('/restaurants', RestaurantsRouter)
 
 // 啟動伺服器
 app.listen(port, () => {
