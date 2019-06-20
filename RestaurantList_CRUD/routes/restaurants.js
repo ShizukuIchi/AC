@@ -71,7 +71,16 @@ router.get('/:id/edit', (req, res) => {
 })
 
 // 修改餐廳動作
-router.put('/:id', (req, res) => {
+router.put('/:id', [
+  check('phone')
+    .exists()
+    .isLength({ min: 10 })
+    .withMessage('電話欄位要有 10 位數')
+    .isNumeric()
+    .withMessage('電話欄位需為數字')
+], (req, res) => {
+
+  const errors = validationResult(req)
 
   // 從 db 取資料
   Restaurant.findOne({
@@ -83,13 +92,16 @@ router.put('/:id', (req, res) => {
     // 更新表單資料
     Object.assign(restaurant, req.body)
 
-    // 將更新後的資料存入 db
-    // 再導頁到餐廳詳細頁面
-    restaurant.save(err => {
-      if (err) return console.error(err)
-      return res.redirect(`/restaurants/${req.params.id}`)
-    })
-
+    if (!errors.isEmpty()) {
+      res.render('addUpdate', { errors: errors.array(), restaurant: restaurant, action: "修改" })
+    } else {
+      // 將更新後的資料存入 db
+      // 再導頁到餐廳詳細頁面
+      restaurant.save(err => {
+        if (err) return console.error(err)
+        return res.redirect(`/restaurants/${req.params.id}`)
+      })
+    }
   })
 })
 
