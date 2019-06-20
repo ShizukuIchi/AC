@@ -2,6 +2,7 @@
 const express = require('express')
 const router = express.Router()
 const Restaurant = require('../models/restaurant')
+const { check, validationResult } = require('express-validator/check');
 
 // 顯示新增餐廳頁面 
 router.get('/new', (req, res) => {
@@ -11,7 +12,16 @@ router.get('/new', (req, res) => {
 })
 
 // 新增餐廳動作
-router.post('/', (req, res) => {
+router.post('/', [
+  check('phone')
+    .exists()
+    .isLength({ min: 10 })
+    .withMessage('電話欄位要有 10 位數')
+    .isNumeric()
+    .withMessage('電話欄位需為數字')
+], (req, res) => {
+
+  const errors = validationResult(req)
 
   const restaurant = Restaurant({
     name: req.body.name,
@@ -25,11 +35,14 @@ router.post('/', (req, res) => {
     description: req.body.description
   })
 
-
-  restaurant.save(err => {
-    if (err) return console.error(err)
-    return res.redirect('/')
-  })
+  if (!errors.isEmpty()) {
+    res.render('addUpdate', { errors: errors.array(), restaurant: restaurant, action: "新增" })
+  } else {
+    restaurant.save(err => {
+      if (err) return console.error(err)
+      return res.redirect('/')
+    })
+  }
 
 })
 

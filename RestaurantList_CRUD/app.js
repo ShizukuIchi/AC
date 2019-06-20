@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const Restaurant = require('./models/restaurant')
+const customHelpers = require('./handlebars-helpers')
 
 // 引入 Router
 const HomeRouter = require('./routes/home')
