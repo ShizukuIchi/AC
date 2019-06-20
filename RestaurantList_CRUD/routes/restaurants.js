@@ -58,5 +58,22 @@ router.get('/:id', (req, res) => {
   })
 })
 
+// 刪除餐廳動作
+router.delete('/:id/delete', (req, res) => {
+  // 從 db 取資料
+  Restaurant.findOne({
+    _id: req.params.id,
+  }, (err, restaurant) => {
+    if (err) return console.error(err)
+
+    // 將 db 中相對應的資料移除，
+    // 再導頁到首頁
+    restaurant.remove(err => {
+      if (err) return console.error(err)
+      return res.redirect('/')
+    })
+  })
+})
+
 // 匯出模組
 module.exports = router
