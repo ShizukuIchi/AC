@@ -7,7 +7,7 @@
 - [執行方式](#執行方式)
 - [功能](#功能)
 - [畫面](#畫面)
-- [Change Logs](#change_logs)
+- [Change Logs](#change-logs)
 - [Contributor](#contributor)
 
 ## 簡介
