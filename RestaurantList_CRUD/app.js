@@ -2,33 +2,43 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 const restaurantList = require('./restaurant.json')
+const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
+const Restaurant = require('./models/restaurant')
 
-// 使用 express 與設定 port
+// 引入 Router
+const HomeRouter = require('./routes/home')
+
+// 使用 express 與設定 port 為 3000
 const app = express()
 const port = 3000
+
+// 引入 Mongoose 與連結設定
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/Restaurant', { useNewUrlParser: true })
+const db = mongoose.connection
+
+//  db 連線成功與錯誤處理
+db.on('error', () => {
+  console.log('mongodb error!')
+})
+
+db.once('open', () => {
+  console.log('mongodb connected!')
+})
 
 // 設定 template engine
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 app.use(express.static('public'))
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
+app.use(methodOverride('_method'))
 
 // 設定路由
-app.get('/', (req, res) => {
-  res.render('index', { restaurants: restaurantList.results });
-})
-
-app.get('/restaurants/:restaurant_id', (req, res) => {
-  const restaurant = restaurantList.results.find(restaurant => restaurant.id.toString() === req.params.restaurant_id)
-  res.render('show', { restaurant: restaurant })
-})
-
-app.get('/search', (req, res) => {
-  const keyword = req.query.keyword
-  const restaurants = restaurantList.results.filter(restaurants => {
-    return restaurants.name.toLowerCase().includes(keyword.toLowerCase())
-  })
-  res.render('index', { restaurants: restaurants, keyword: keyword })
-})
+// home 路由
+app.use('/', HomeRouter)
 
 // 啟動伺服器
 app.listen(port, () => {
