@@ -77,6 +77,14 @@ npm run dev
 
 ![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E5%88%AA%E9%99%A4.gif?raw=true)
 
+* 修改
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E4%BF%AE%E6%94%B9.gif?raw=true)
+
+* 詳情
+
+![]()
+
 ## Change Logs
 
 * https://github.com/ArcherHuang/AC/commits/master/RestaurantList_CRUD
