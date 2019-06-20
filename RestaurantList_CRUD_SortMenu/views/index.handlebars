@@ -1,0 +1,87 @@
+<!-- ./views/index.handlebars -->
+
+{{!-- 搜尋餐廳 --}}
+<div class="container search-bar mt-4 mx-auto">
+  <form action="/">
+    <div class="search-bar-outer">
+      <div class="search-bar-inner">
+        <h4 class="mb-2 text-center">尋找餐廳</h4>
+        <div class="input-group">
+          <input type="text" name="searchKeyword" class="form-control" placeholder="輸入餐廳、分類" value="{{searchKeyword}}"
+            aria-label="Restaurant Name..." aria-describedby="search-button">
+          <div class="input-group-append">
+            <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- 顯示餐廳資訊與讀取、修改、刪除按鈕 -->
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12 mx-auto">
+      <div class="card-group">
+        {{#each restaurants}}
+        <div class="col-md-4 col-sm-6 col-12">
+
+          <div class="card mb-3">
+
+            {{!-- 顯示餐廳資訊 --}}
+            <a href="/restaurants/{{this._id}}" class="text-secondary a-cover">
+              <div>
+                <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+              </div>
+
+              <div class="card-body p-3">
+                <h6 class="card-title mb-1">{{this.name}}</h6>
+                <div class="restaurant-category mb-1">
+                  <i class="fas fa-utensils pr-2"></i> {{this.category}}
+                </div>
+                <span class="badge badge-pill badge-danger font-weight-normal">
+                  {{this.rating}}
+                  <i class="fas fa-star fa-xs"></i>
+                </span>
+              </div>
+            </a>
+
+            <div class="card-footer py-3">
+              <div class="row justify-content-center">
+
+                {{!-- 顯示讀取、修改、刪除按鈕 --}}
+                <a class="btn btn-sm btn-outline-info col-lg-3 col-10 my-1 mx-1"
+                  href="/restaurants/{{this._id}}/edit">修改</a>
+                <a class="btn btn-sm btn-outline-info col-lg-3 col-10 my-1 mx-1" href="/restaurants/{{this._id}}">詳情</a>
+                <form class="col-lg-4 col-10 my-1 p-0">
+                  <button type="button" class="btn btn-sm btn-outline-danger col-10 " data-toggle="modal" data-target="
+                      #deleteRestaurantItem-{{this._id}}">刪除</button>
+                </form>
+
+                {{!--  刪除餐廳動作 --}}
+                <div class="modal fade" id="deleteRestaurantItem-{{this._id}}" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <p class="font-weight-light">確定要刪除【 {{this.name}} 】餐廰嗎?</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                        <form action="/restaurants/{{this._id}}/delete?_method=DELETE" method="POST">
+                          <button type="submit" class="btn btn-danger">刪除</button>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
