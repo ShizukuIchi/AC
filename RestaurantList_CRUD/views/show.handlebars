@@ -1,5 +1,21 @@
 <!-- ./views/show.handlebars -->
 <h1 class="mb-1 restaurant-show-title">{{restaurant.name}}</h1>
+
+{{!-- 返回首頁、修改、刪除等動作按鈕 --}}
+<div class="container">
+  <div class="row">
+    <div class="mx-auto px-5">
+      <a class="btn btn-success px-3 mx-3" href="/">返回首頁</a>
+      <a class="btn btn-info px-3 " href="/restaurants/{{restaurant._id}}/edit">修改</a>
+      <form class="btn">
+        <button type="button" class="btn btn-danger px-3" data-toggle="modal"
+          data-target="#trigger-deleteItem-{{restaurant._id}}">刪除</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- 顯示餐廳細節資訊 -->
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-10 mx-auto">
