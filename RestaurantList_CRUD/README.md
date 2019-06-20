@@ -61,7 +61,9 @@ npm run dev
 
 ## 畫面
 
+* 首頁
 
+![](https://oranwind.s3.amazonaws.com/2019/Jun/6__20_2019_11_44_47-1561002403607.gif)
 
 ## Change Logs
 
