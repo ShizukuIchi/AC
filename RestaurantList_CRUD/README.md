@@ -65,25 +65,25 @@ npm run dev
 
 ![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E9%A6%96%E9%A0%81.gif?raw=true)
 
-* 新增
-
-![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E6%96%B0%E5%A2%9E.gif?raw=true)
-
 * 搜尋
 
 ![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E6%90%9C%E5%B0%8B.gif?raw=true)
 
-* 刪除
+* 新增
 
-![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E5%88%AA%E9%99%A4.gif?raw=true)
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E6%96%B0%E5%A2%9E.gif?raw=true)
 
 * 修改
 
 ![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E4%BF%AE%E6%94%B9.gif?raw=true)
 
+* 刪除
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E5%88%AA%E9%99%A4.gif?raw=true)
+
 * 詳情
 
-![]()
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E8%A9%B3%E6%83%85.gif?raw=true)
 
 ## Change Logs
 
