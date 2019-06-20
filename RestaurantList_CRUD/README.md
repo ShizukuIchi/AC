@@ -28,7 +28,7 @@
 git clone https://github.com/ArcherHuang/AC.git
 cd ./AC/RestaurantList_CRUD/models/seeds
 node restaurantSeeder.js
-cd ./AC/RestaurantList_CRUD
+cd ../..
 npm install
 ```
 
