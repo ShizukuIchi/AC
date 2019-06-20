@@ -10,6 +10,29 @@ router.get('/new', (req, res) => {
   })
 })
 
+// 新增餐廳動作
+router.post('/', (req, res) => {
+
+  const restaurant = Restaurant({
+    name: req.body.name,
+    name_en: req.body.name_en,
+    category: req.body.category,
+    image: req.body.image || "https://api.fnkr.net/testimg/600x400/EBF5FB/FFF/?text=img",
+    location: req.body.location,
+    phone: req.body.phone,
+    google_map: req.body.google_map,
+    rating: req.body.rating,
+    description: req.body.description
+  })
+
+
+  restaurant.save(err => {
+    if (err) return console.error(err)
+    return res.redirect('/')
+  })
+
+})
+
 // 顯示餐廳詳細資料頁面
 router.get('/:id', (req, res) => {
   Restaurant.findOne({
