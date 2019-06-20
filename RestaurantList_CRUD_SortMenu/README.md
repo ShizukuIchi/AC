@@ -12,6 +12,7 @@
 
 ## 簡介
 * 使用者可新增、修改、刪除、搜尋與查看餐廳詳細資訊
+* 可將餐廳資訊依排序要求來顯示
 
 ## 環境建置與需求
 * Node.js : v10.16.0
@@ -26,7 +27,7 @@
 * 請在 `Console 1` 輸入下方指令
 ```
 git clone https://github.com/ArcherHuang/AC.git
-cd ./AC/RestaurantList_CRUD/models/seeds
+cd ./AC/RestaurantList_CRUD_SortMenu/models/seeds
 node restaurantSeeder.js
 cd ../..
 npm install
@@ -49,24 +50,44 @@ npm run dev
 * http://localhost:3000/
 
 ## 功能
-
 | 編號 | 功能 | 說明  |
 |:---:|:---:|---|
-| 1 | 首頁 | ① 顯示所有我的最愛餐廳 <br> ② 滑鼠移到各別餐廳卡片時會改變卡片的背景顏色 <br> ③  當頁面卷軸滑到下方時會出現移到最上方的按鈕，當卷軸在上方時移到最上方的按鈕會消失 |
-| 2 | 搜尋 | 依所輸入的條件搜尋所有我的最愛餐廳符合關鍵字的名稱或類別 |
-
+| 1 | 首頁 | ① 顯示所有我的最愛餐廳 <br> ② 滑鼠移到各別餐廳卡片時會改變卡片的背景顏色 <br> ③ 當頁面卷軸滑到下方時會出現移到最上方的按鈕，當卷軸在上方時移到最上方的按鈕會消失 <br> ④ 可選擇不同的排序方式 |
+| 2 | 搜尋 | 依所輸入的條件搜尋所有我的最愛餐廳符合關鍵字的名稱或類別 <br> ② 可選擇不同的排序方式 |
+| 3 | 新增資訊 | ① 新增餐廳資訊 <br> ② 中文名稱、英文名稱、類別、電話、評分等欄位必填 <br> ③ 透過 `express-validator` 驗證電話欄位是否為數字與 10 位數 <br> ④ 簡介欄位最多輸入 200 個字且即時顯示目前剩餘的字數 <br> ⑤ 當頁面卷軸滑到下方時會出現移到最上方的按鈕，當卷軸在上方時移到最上方的按鈕會消失 |
+| 4 | 修改資訊 | ① 修改餐廳資訊 <br> ② 中文名稱、英文名稱、類別、電話、評分等欄位必填 <br> ③ 透過 `express-validator` 驗證電話欄位是否為數字與 10 位數 <br> ④ 簡介欄位最多輸入 200 個字且即時顯示目前剩餘的字數 <br> ⑤ 當頁面卷軸滑到下方時會出現移到最上方的按鈕，當卷軸在上方時移到最上方的按鈕會消失 |
+| 5 | 刪除餐廳 | ① 刪除餐廳 <br> ② 顯示提示訊息讓使用者確認 |
+| 6 | 詳細資訊 | ① 顯示餐廳詳細資訊 <br> ② 當頁面卷軸滑到下方時會出現移到最上方的按鈕，當卷軸在上方時移到最上方的按鈕會消失 |
 
 ## 畫面
 
 * 首頁
 
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/index-sort-menu.gif?raw=true)
 
 * 搜尋
 
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/search-sort-menu.gif?raw=true)
+
+* 新增
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E6%96%B0%E5%A2%9E.gif?raw=true)
+
+* 修改
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E4%BF%AE%E6%94%B9.gif?raw=true)
+
+* 刪除
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E5%88%AA%E9%99%A4.gif?raw=true)
+
+* 詳情
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E8%A9%B3%E6%83%85.gif?raw=true)
 
 ## Change Logs
 
-
+* https://github.com/ArcherHuang/AC/commits/master/RestaurantList_CRUD_SortMenu
 
 ## Contributor
 * [Archer Huang](https://github.com/archerhuang)
