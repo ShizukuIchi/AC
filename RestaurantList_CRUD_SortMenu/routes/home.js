@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
   // 使用 Regular Expression 進行搜尋
   const searchKeywordRegExp = new RegExp(req.query.searchKeyword, 'i')
   // 以 name 欄位進行小到大排序
-  const sortField = 'name'
-  const sortOrder = 'asc'
+  const sortField = req.query.sortField || 'name'
+  const sortOrder = req.query.sortOrder || 'asc'
   const sortObject = {}
   sortObject[sortField] = sortOrder
 
