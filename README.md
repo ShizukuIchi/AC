@@ -12,3 +12,4 @@
 |6| [Movie-List](https://archerhuang.github.io/AC/Movie-List) | 顯示電影資訊 |
 |7| [restaurant_list](https://github.com/ArcherHuang/AC/tree/master/restaurant_list) | 顯示餐廳資訊 |
 |8| [generateTalkTrash](https://github.com/ArcherHuang/AC/tree/master/generateTalkTrash) | 依不同職業產生不同的幹話 |
+|9| [RestaurantList_CRUD](https://github.com/ArcherHuang/AC/tree/master/RestaurantList_CRUD) | 使用者可新增、修改、刪除、搜尋與查看餐廳詳細資訊 |
