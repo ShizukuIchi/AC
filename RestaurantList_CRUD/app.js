@@ -1,7 +1,6 @@
 // 引入相依套件與檔案
 const express = require('express')
 const exphbs = require('express-handlebars')
-const restaurantList = require('./restaurant.json')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const Restaurant = require('./models/restaurant')
