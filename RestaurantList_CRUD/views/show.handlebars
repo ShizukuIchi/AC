@@ -15,6 +15,26 @@
   </div>
 </div>
 
+<!-- 刪除餐廳-->
+<div class="modal fade" id="trigger-deleteItem-{{restaurant._id}}" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <p class="font-weight-light">確定要刪除【 {{restaurant.name}} 】餐廰嗎?</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        <form action="/restaurants/{{restaurant._id}}/delete?_method=DELETE" method="POST">
+          <button type="submit" class="btn btn-danger">刪除</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- 顯示餐廳細節資訊 -->
 <div class="container">
   <div class="row">
