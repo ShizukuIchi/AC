@@ -63,7 +63,7 @@ npm run dev
 
 * 首頁
 
-![](https://oranwind.s3.amazonaws.com/2019/Jun/6__20_2019_11_44_47-1561002403607.gif)
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E9%A6%96%E9%A0%81.gif?raw=true)
 
 ## Change Logs
 
