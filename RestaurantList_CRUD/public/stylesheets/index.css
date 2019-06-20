@@ -120,3 +120,14 @@ header {
   visibility: visible;
 }
 
+.a-cover:hover {
+  text-decoration: none;
+}
+
+.card {
+  background-color: white;
+ }
+ /*滑鼠移過的效果*/
+ .card:hover {
+  background-color: #FDF5E6;
+ }
