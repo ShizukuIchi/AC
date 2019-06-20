@@ -73,6 +73,10 @@ npm run dev
 
 ![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E6%90%9C%E5%B0%8B.gif?raw=true)
 
+* 刪除
+
+![](https://github.com/ArcherHuang/Pic/blob/master/RestaurantList_CRUD/%E5%88%AA%E9%99%A4.gif?raw=true)
+
 ## Change Logs
 
 * https://github.com/ArcherHuang/AC/commits/master/RestaurantList_CRUD
