@@ -19,9 +19,24 @@
     <div class="mx-auto d-flex justify-content-end">
       <div class="sortMenu ">
 
+        {{!-- 判斷排序種類並設定顯示文字 --}}
+        {{#ifEquals this.sortField 'name'}}
+        {{#ifEquals this.sortOrder 'asc'}}
+        {{assign "searchString" "A ➙ Z"}}
+        {{else}}
+        {{assign "searchString" "Z ➙ A"}}
+        {{/ifEquals}}
+        {{else}}
+        {{#ifEquals this.sortField 'category'}}
+        {{assign "searchString" "餐廳類別"}}
+        {{else}}
+        {{assign "searchString" "餐廳評分"}}
+        {{/ifEquals}}
+        {{/ifEquals}}
+
         {{!-- 排序選單 --}}
         <button class="btn btn-outline-primary dropdown-toggle" type="button" id="sortMenuBtn" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">排序</button>
+          aria-haspopup="true" aria-expanded="false">【 {{searchString}} 】排序</button>
 
         <div class="dropdown-menu" aria-labelledby="sortMenuBtn">
           <a class="dropdown-item" href="/?searchKeyword={{searchKeyword}}&sortField=name&sortOrder=asc">A ➙ Z</a>
