@@ -58,6 +58,18 @@ router.get('/:id', (req, res) => {
   })
 })
 
+// 修改餐廳頁面
+router.get('/:id/edit', (req, res) => {
+  Restaurant.findOne({
+    _id: req.params.id,
+  }, (err, restaurant) => {
+    if (err) return console.error(err)
+    return res.render('addUpdate', {
+      restaurant: restaurant, action: "修改"
+    })
+  })
+})
+
 // 刪除餐廳動作
 router.delete('/:id/delete', (req, res) => {
   // 從 db 取資料
