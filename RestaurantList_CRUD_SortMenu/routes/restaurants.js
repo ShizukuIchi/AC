@@ -15,10 +15,13 @@ router.get('/new', (req, res) => {
 router.post('/', [
   check('phone')
     .exists()
-    .isLength({ min: 10 })
-    .withMessage('電話欄位要有 10 位數')
-    .isNumeric()
-    .withMessage('電話欄位需為數字')
+    .isLength({ min: 11 })
+    .withMessage('電話欄位要有 11 位數')
+    .custom(value => {
+      const regExp = new RegExp(/^\d{2}-\d{8}$/, 'i')
+      return regExp.test(value)
+    })
+    .withMessage("電話格式要為區碼-號碼，例如: 02-28825252")
 ], (req, res) => {
 
   const errors = validationResult(req)
@@ -74,10 +77,13 @@ router.get('/:id/edit', (req, res) => {
 router.put('/:id', [
   check('phone')
     .exists()
-    .isLength({ min: 10 })
-    .withMessage('電話欄位要有 10 位數')
-    .isNumeric()
-    .withMessage('電話欄位需為數字')
+    .isLength({ min: 11 })
+    .withMessage('電話欄位要有 11 位數')
+    .custom(value => {
+      const regExp = new RegExp(/^\d{2}-\d{8}$/, 'i')
+      return regExp.test(value)
+    })
+    .withMessage("電話格式要為區碼-號碼，例如: 02-28825252")
 ], (req, res) => {
 
   const errors = validationResult(req)
