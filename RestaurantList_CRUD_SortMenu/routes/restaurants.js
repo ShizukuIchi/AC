@@ -17,11 +17,8 @@ router.post('/', [
     .exists()
     .isLength({ min: 11 })
     .withMessage('電話欄位要有 11 位數')
-    .custom(value => {
-      const regExp = new RegExp(/^\d{2}-\d{8}$/, 'i')
-      return regExp.test(value)
-    })
-    .withMessage("電話格式要為區碼-號碼，例如: 02-28825252")
+    .custom(value => /^\d{2}-\d{8}$/.test(value))
+    .withMessage('電話格式要為區碼-號碼，例如: 02-28825252')
 ], (req, res) => {
 
   const errors = validationResult(req)
@@ -79,11 +76,8 @@ router.put('/:id', [
     .exists()
     .isLength({ min: 11 })
     .withMessage('電話欄位要有 11 位數')
-    .custom(value => {
-      const regExp = new RegExp(/^\d{2}-\d{8}$/, 'i')
-      return regExp.test(value)
-    })
-    .withMessage("電話格式要為區碼-號碼，例如: 02-28825252")
+    .custom(value => /^\d{2}-\d{8}$/.test(value))
+    .withMessage('電話格式要為區碼-號碼，例如: 02-28825252')
 ], (req, res) => {
 
   const errors = validationResult(req)
