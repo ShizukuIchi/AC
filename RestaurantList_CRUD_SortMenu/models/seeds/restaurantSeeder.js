@@ -1,8 +1,8 @@
 // npm install mongoose
 
-const mongoose = require('mongoose');
-const Restaurant = require('../restaurant');
-const restaurantsList = require('../../restaurant.json').results;
+const mongoose = require('mongoose')
+const Restaurant = require('../restaurant')
+const restaurantsList = require('../../restaurant.json').results
 
 mongoose.connect('mongodb://localhost/Restaurant', { useNewUrlParser: true })
 
@@ -16,11 +16,8 @@ db.once('open', () => {
   console.log('mongodb connected!')
 
   console.log(`restaurantsList count: ${restaurantsList.length}`)
-  restaurantsList.forEach(item => {
-    // console.log(`${item['name']}`)
-    Restaurant.create({
-      ...item
-    })
+  restaurantsList.forEach(function(item) {
+    Restaurant.create(item)
   })
 
   console.log('Restaurant data insert DB done ~')

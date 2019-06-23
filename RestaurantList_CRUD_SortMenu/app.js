@@ -3,12 +3,7 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
-const Restaurant = require('./models/restaurant')
-const customHelpers = require('./handlebars-helpers')
-
-// 引入 Router
-const HomeRouter = require('./routes/home')
-const RestaurantsRouter = require('./routes/restaurants')
+require('./handlebars-helpers')
 
 // 使用 express 與設定 port 為 3000
 const app = express()
@@ -32,17 +27,18 @@ db.once('open', () => {
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 app.use(express.static('public'))
-app.use(bodyParser.urlencoded({
-  extended: true
-}))
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+)
 app.use(methodOverride('_method'))
 
 // 設定路由
 // home 路由
-app.use('/', HomeRouter)
+app.use(require('./routes'))
 
 // restaurants 路由
-app.use('/restaurants', RestaurantsRouter)
 
 // 啟動伺服器
 app.listen(port, () => {
